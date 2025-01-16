@@ -1,0 +1,14 @@
+.loader svg {
+    Display: block;
+    Width: 100%;
+    Height: 100%;
+}
+.loader svg rect,
+.loader svg polygon,
+.loader svg circle {
+    fill: none;
+    stroke: var(--path);
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
