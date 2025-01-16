@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+   <!------  This is where a image will go ------>
+<img src="Patrick.png" Width=" 200" Height="200"> 
+
+<head>
+    <title>Patrick Kyle Moore CV</title>
+    </head>
+    <body>
+        <h1>Patrick Kyle Moore</h1>
+        <p>My name is Patrick Kyle Moore and I am a student at the Springboard. I am currently studying Software Development. Holder of 10 out of 18 AWS badges, skilled and willing to learn any topic that is presented.</p>
+        
+        <h2>Education</h2>
+        <p><b>Springboard - <i>Software Development</i> - 2025 - Present</p> </b>
+        <p><b>Tennessee Tech - <i>CAD</i> - 2017 - 2018</p> </b>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Information Technology</li>
+            <li>CAD</li>
+        </ul>
+
+        <h2>Experience</h2>
+        <a href="https://www.credly.com/users/patrick-moore.081dc9b8">Credly</a> <br>
+        <a href="https://www.linkedin.com/in/patrick-moore-5bb341199/">LinkedIn</a>
+
+        <h2> Job Experience</h2>
+        <p>ICQA Logistics - AWS - 2024 - Present</p>
+        <p>Fullfillment Associate - Amazon - 2022 - 2024</p>
+        <p>Area Manager - RGIS - 2011 - 2023</p>
+
+        <h2>Projects</h2>
+        <a href="https://github.com/Zenith109/Zenith109">GitHub</a>
+
+        <h2>Contact</h2>
+        <p><i>901-498-2202</i></p>
+
+        <p>Email: <strong>Patrickmoore109@gmail.com</strong></p>
+    </body>
+</html>
