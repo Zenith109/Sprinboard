@@ -10,15 +10,15 @@
 <body>
     <!-- Header section with profile image and name -->
     <div class="header" id="header">
-        <img src="Patrick.png" width="200" height="200" alt="Patrick Kyle Moore" id="profile-image">
+        <img src="CV_Pic.png" width="200" height="200" alt="Patrick Kyle Moore" id="profile-image">
         <h1 id="name">Patrick Kyle Moore</h1>
     </div>
 
-    <!-- Contact information section -->
+    <!-- Contact information section w/inline style for hover effect -->
     <div class="contact" id="contact">
         <h2 id="contact-heading">Contact</h2>
         <p id="phone"><i>901-498-2202</i></p>
-        <p id="email">Email: <strong>Patrickmoore109@gmail.com</strong></p>
+        <p id="email">Email: <strong><a href="mailto:Patrickmoore109@gmail.com" class="hover-link">Patrickmoore109@gmail.com</a></strong></p>
     </div>
 
     <!-- Contact form section -->
@@ -37,7 +37,7 @@
         <textarea name="Message" rows="5" cols="20" maxlength="2000" id="message">Message</textarea> <br>
 
         <!-- Date input field -->
-        <p><strong>Date Taken:</strong></p>
+        <p><strong>Date Needed:</strong></p>
         <input type="date" name="Date" id="date"> <br>
 
         <!-- Time Needed radio buttons -->
@@ -62,9 +62,10 @@
         <button type="submit" id="submit-button">Finish (o゜▽゜)o☆</button>
     </form>
 
-    <!-- About section -->
-    <div class="about" id="about"></div>
-        <p id="about-text">Passionate front-end web developer with a strong foundation in technology and software development. Currently advancing my skills through Springboard's Software Development program. Proficient in HTML, CSS, JavaScript, and Python, with a keen interest in learning new languages and tools. A quick learner dedicated to tackling new challenges and continuously improving my craft.</p>
+    <!-- About Me section -->
+    <div class="about" id="about">
+        <h2 id="about-heading">About Me</h2>
+        <p id="about-text">I am a passionate and dedicated front-end web developer with a robust foundation in technology and software development. Currently, I am enhancing my expertise through Springboard's comprehensive Software Development program. My proficiency spans across HTML, CSS, JavaScript, and Python, and I am continually expanding my knowledge by exploring new languages and tools. I possess a strong aptitude for problem-solving and a commitment to delivering high-quality, efficient solutions. My quick learning ability and dedication to professional growth enable me to tackle new challenges with confidence and continuously refine my skills. I am eager to contribute to innovative projects and collaborate with like-minded professionals to drive technological advancements.</p>
     </div>
 
     <!-- Education section -->
@@ -103,12 +104,12 @@
         </ul>
     </div>
 
-    <!-- Experience section -->
+    <!-- Experience section added hover style inlines -->
     <div class="experience" id="experience">
         <h2 id="experience-heading">Experience</h2>
-        <a href="https://www.credly.com/users/patrick-moore.081dc9b8" id="credly-link">Credly</a> <br>
-        <a href="https://www.linkedin.com/in/patrick-moore-5bb341199/" id="linkedin-link">LinkedIn</a> <br>
-        <a href="https://github.com/Zenith109/Zenith109" id="github-link">GitHub</a>
+        <a href="https://www.credly.com/users/patrick-moore.081dc9b8" id="credly-link" class="hover-link">Credly</a> <br>
+        <a href="https://www.linkedin.com/in/patrick-moore-5bb341199/" id="linkedin-link" class="hover-link">LinkedIn</a> <br>
+        <a href="https://github.com/Zenith109/Zenith109" id="github-link" class="hover-link">GitHub</a>
     </div>
 
     <!-- Tools section with a table -->

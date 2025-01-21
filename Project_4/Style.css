@@ -8,29 +8,31 @@
 /* Add margin, padding, border, and background image to the body */
 body {
     background-color: #1E1E1E; /* Dark Gray */
-    background-image: url('/path/to/your/image.jpg'); /* Background image */
+    background-image: url('Background_CV.png'); /* Background image */
     background-size: cover; /* Cover the entire area */
     background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Make the background fixed */
     background-position: center; /* Center the image */
-    color: #FFFFFF; /* White */
+    color: #E0E0E0; /* Light Gray */
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    margin: 20px;
+    margin: 0;
     padding: 20px;
-    border: 5px solid #FF6347; /* Tomato */
+    border: none;
 }
 
 /* Profile picture styling */
 .profile-picture {
     border-radius: 50%; /* Make the profile picture round */
-    border: 3px solid #FF6347; /* Tomato */
+    border: 3px solid #E0E0E0; /* Light Gray */
 }
 
 /* Separate sections with margins and borders */
 section {
     margin: 20px 0; /* Vertical margin */
     padding: 20px; /* Padding inside the section */
-    border: 2px solid #FF6347; /* Tomato */
+    border: 2px solid #E0E0E0; /* Light Gray */
+    background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent background */
 }
 
 /* Apply padding below headers */
@@ -41,8 +43,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Adjust form elements */
 input, textarea, select, button {
     background-color: #2E2E2E; /* Slightly lighter gray */
-    color: #FFFFFF; /* White */
-    border: 1px solid #FF6347; /* Tomato */
+    color: #E0E0E0; /* Light Gray */
+    border: 1px solid #E0E0E0; /* Light Gray */
     padding: 10px; /* Padding inside form elements */
     margin-bottom: 10px; /* Margin below form elements */
 }
@@ -117,14 +119,14 @@ h6 {
 p {
     font-size: 14px; /* Font size */
     font-family: 'Roboto', sans-serif;
-    color: #FFFFFF; /* White */
+    color: #E0E0E0; /* Light Gray */
     text-align: left; /* Left align */
     line-height: 1.6; /* Line height */
 }
 
 /* Header section */
 #header {
-    background-color: #2E2E2E; /* Slightly lighter gray */
+    background-color: rgba(46, 46, 46, 0.8); /* Semi-transparent background */
     color: #FF6347; /* Tomato */
     text-align: center; /* Center align */
     padding: 20px 0; /* Vertical padding */
@@ -133,8 +135,8 @@ p {
 
 /* Contact section */
 #contact {
-    background-color: #2E2E2E; /* Slightly lighter gray */
-    color: #FFFFFF; /* White */
+    background-color: rgba(46, 46, 46, 0.8); /* Semi-transparent background */
+    color: #E0E0E0; /* Light Gray */
     padding: 20px; /* Padding inside the section */
     border-radius: 10px; /* Rounded corners */
     margin-top: 20px; /* Margin above the section */
@@ -142,8 +144,8 @@ p {
 
 /* Contact form */
 #contact-form {
-    background-color: #2E2E2E; /* Slightly lighter gray */
-    color: #FFFFFF; /* White */
+    background-color: rgba(46, 46, 46, 0.8); /* Semi-transparent background */
+    color: #E0E0E0; /* Light Gray */
     padding: 20px; /* Padding inside the form */
     border-radius: 10px; /* Rounded corners */
     margin-top: 20px; /* Margin above the form */
@@ -151,8 +153,8 @@ p {
 
 /* About section */
 #about {
-    background-color: #2E2E2E; /* Slightly lighter gray */
-    color: #FFFFFF; /* White */
+    background-color: rgba(46, 46, 46, 0.8); /* Semi-transparent background */
+    color: #e0e0e0; /* Light Gray */
     padding: 20px; /* Padding inside the section */
     border-radius: 10px; /* Rounded corners */
     margin-top: 20px; /* Margin above the section */
@@ -160,8 +162,8 @@ p {
 
 /* Education section */
 #education {
-    background-color: #2E2E2E; /* Slightly lighter gray */
-    color: #FFFFFF; /* White */
+    background-color: rgba(46, 46, 46, 0.8); /* Semi-transparent background */
+    color: #E0E0E0; /* Light Gray */
     padding: 20px; /* Padding inside the section */
     border-radius: 10px; /* Rounded corners */
     margin-top: 20px; /* Margin above the section */
@@ -169,8 +171,8 @@ p {
 
 /* Technologies section */
 #technologies {
-    background-color: #2E2E2E; /* Slightly lighter gray */
-    color: #FFFFFF; /* White */
+    background-color: rgba(46, 46, 46, 0.8); /* Semi-transparent background */
+    color: #E0E0E0; /* Light Gray */
     padding: 20px; /* Padding inside the section */
     border-radius: 10px; /* Rounded corners */
     margin-top: 20px; /* Margin above the section */
@@ -178,8 +180,8 @@ p {
 
 /* Experience section */
 #experience {
-    background-color: #2E2E2E; /* Slightly lighter gray */
-    color: #FFFFFF; /* White */
+    background-color: rgba(46, 46, 46, 0.8); /* Semi-transparent background */
+    color: #E0E0E0; /* Light Gray */
     padding: 20px; /* Padding inside the section */
     border-radius: 10px; /* Rounded corners */
     margin-top: 20px; /* Margin above the section */
@@ -187,8 +189,8 @@ p {
 
 /* Tools section */
 #tools {
-    background-color: #2E2E2E; /* Slightly lighter gray */
-    color: #FFFFFF; /* White */
+    background-color: rgba(46, 46, 46, 0.8); /* Semi-transparent background */
+    color: #E0E0E0; /* Light Gray */
     padding: 20px; /* Padding inside the section */
     border-radius: 10px; /* Rounded corners */
     margin-top: 20px; /* Margin above the section */
@@ -201,7 +203,7 @@ p {
 }
 
 #tools-table th, #tools-table td {
-    border: 1px solid #FFFFFF; /* White border */
+    border: 1px solid #E0E0E0; /* Light Gray border */
     padding: 10px; /* Padding inside cells */
     text-align: left; /* Left align text */
 }
@@ -212,6 +214,6 @@ p {
 }
 
 #tools-table td {
-    background-color: #2E2E2E; /* Slightly lighter gray */
-    color: #FFFFFF; /* White */
+    background-color: rgba(46, 46, 46, 0.8); /* Semi-transparent background */
+    color: #E0E0E0; /* Light Gray */
 }
