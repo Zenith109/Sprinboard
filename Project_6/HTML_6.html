@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <!-- Link to external stylesheet and background images -->
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="style.css">
     <title>Patrick Kyle Moore</title>
 </head>
@@ -21,35 +21,35 @@
         <p id="email">Email: <strong><a href="mailto:Patrickmoore109@gmail.com" class="hover-link">Patrickmoore109@gmail.com</a></strong></p>
     </div>
 
-    <!-- Contact form section -->
+    <!-- Contact form section need to shrink down this section -->
     <h3 id="contact-me-heading">Contact Me</h3>
     <form id="contact-form">
         <!-- First Name input field -->
         <p><strong>First Name:</strong></p>
-        <input type="text" name="First Name" minlength="2" maxlength="20" value="Name" required id="first-name"> <br>
+        <input type="text" name="first-name" minlength="2" maxlength="20" value="Name" required id="first-name"> <br>
 
         <!-- Email input field -->
         <p><strong>Email:</strong></p>
-        <input type="email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required id="email-input"> <br>
+        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required id="email-input"> <br>
 
         <!-- Message textarea field -->
         <p><strong>Message:</strong></p>
-        <textarea name="Message" rows="5" cols="20" maxlength="2000" id="message">Message</textarea> <br>
+        <textarea name="message" rows="5" cols="20" maxlength="2000" id="message">Message</textarea> <br>
 
         <!-- Date input field -->
         <p><strong>Date Needed:</strong></p>
-        <input type="date" name="Date" id="date"> <br>
+        <input type="date" name="date" id="date"> <br>
 
         <!-- Time Needed radio buttons -->
         <p><strong>Time Needed:</strong></p>
-        <input type="radio" name="Time Needed" value="Morning" id="time-morning">Morning
-        <input type="radio" name="Time Needed" value="Afternoon" id="time-afternoon">Afternoon
-        <input type="radio" name="Time Needed" value="Evening" id="time-evening">Evening <br>
+        <input type="radio" name="time-needed" value="Morning" id="time-morning">Morning
+        <input type="radio" name="time-needed" value="Afternoon" id="time-afternoon">Afternoon
+        <input type="radio" name="time-needed" value="Evening" id="time-evening">Evening <br>
 
         <!-- Language selection dropdown -->
         <div class="form-group" id="language-group">
-            <label for="My Language">Select a Language</label>
-            <select class="form-control" id="my-language">
+            <label for="my-language">Select a Language</label>
+            <select class="form-control" id="my-language" name="my-language">
                 <option>Choose</option>
                 <option>Python</option>
                 <option>HTML</option>
@@ -58,8 +58,8 @@
                 <option>TypeScript</option>
             </select>
         </div>
-        <!-- Submit button -->
-        <button type="submit" id="submit-button">Finish (o゜▽゜)o☆</button>
+        <!-- Submit button going to JS the button-->
+        <button type="submit" id="submit-button">Submit</button>
     </form>
 
     <!-- About Me section -->
@@ -103,8 +103,18 @@
             <li id="john-the-ripper">John the Ripper</li>
         </ul>
     </div>
-
-    <!-- Experience section added hover style inlines -->
+    <div>
+        <h2>Projects</h2>
+        <ul>
+            <!--this area will be a flex-box area that will drift upwards as you hover over them-->
+            <li>Project 1</li><!-- this is where photos and descriptions of the project will go-->
+            <li>Project 2</li><!-- this is where photos and descriptions of the project will go-->
+            <li>Project 3</li><!-- this is where photos and descriptions of the project will go-->
+            <li>Project 4</li><!-- this is where photos and descriptions of the project will go-->
+            <li>Project 5</li>
+        </ul>
+    </div>
+    <!-- Experience section added hover links that way the user will be prompt where they are going -->
     <div class="experience" id="experience">
         <h2 id="experience-heading">Experience</h2>
         <a href="https://www.credly.com/users/patrick-moore.081dc9b8" id="credly-link" class="hover-link">Credly</a> <br>
@@ -172,6 +182,7 @@
                 </tr>
             </tbody>
         </table>
+        <!--could the table use a little more eye candy looks a little dull to the eye for the time being-->
     </div>
 </body>
 </html>

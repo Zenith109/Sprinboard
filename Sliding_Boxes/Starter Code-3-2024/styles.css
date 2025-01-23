@@ -1,0 +1,103 @@
+body
+{
+  position: relative; /* Set the body to relative positioning */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background-color: black; /* Set the background color of the body to black */
+}
+
+.red
+{
+  width: 100px; /* Set the width of the red box */
+  height: 100px; /* Set the height of the red box */
+  background-color: red; /* Set the background color of the red box */
+}
+
+.green
+{
+  width: 80px; /* Set the width of the green box */
+  height: 80px; /* Set the height of the green box */
+  background-color: green; /* Set the background color of the green box */
+}
+
+.blue
+{
+  width: 60px; /* Set the width of the blue box */
+  height: 60px; /* Set the height of the blue box */
+  background-color: blue; /* Set the background color of the blue box */
+}
+
+.yellow
+{
+  width: 40px; /* Set the width of the yellow box */
+  height: 40px; /* Set the height of the yellow box */
+  background-color: yellow; /* Set the background color of the yellow box */
+}
+
+.exercise-1,
+.exercise-2,
+.exercise-3,
+.exercise-4
+{
+  position: relative; /* Set the exercises to relative positioning */
+}
+
+.exercise-1 div,
+.exercise-2 div,
+.exercise-3 div,
+.exercise-4 div
+{
+  position: absolute; /* Set the divs inside exercises to absolute positioning */
+}
+
+/* Exercise 2 */
+
+.exercise-2
+{
+  top: 120px; /* Position exercise-2 120px from the top */
+}
+
+.exercise-2 .green,
+.exercise-2 .blue,
+.exercise-2 .yellow
+{
+  top: 10px; /* Position the green, blue, and yellow boxes 10px from the top */
+  left: 10px; /* Position the green, blue, and yellow boxes 10px from the left */
+}
+
+/* Exercise 3 */
+
+.exercise-3
+{
+  top: 240px; /* Position exercise-3 240px from the top */
+}
+
+.exercise-3 .green
+{
+  position: relative; /* Set the green box to relative positioning */
+}
+
+.exercise-3 .blue,
+.exercise-3 .yellow
+{
+  position: absolute; /* Set the blue and yellow boxes to absolute positioning */
+  right: 0; /* Position the blue and yellow boxes 0px from the right */
+  bottom: 0; /* Position the blue and yellow boxes 0px from the bottom */
+}
+
+/* Exercise 4 */
+
+.exercise-4
+{
+  top: 360px; /* Position exercise-4 360px from the top */
+}
+
+.exercise-4 .blue
+{
+  position: fixed; /* Set the blue box to fixed positioning */
+  right: 0; /* Position the blue box 0px from the right */
+}
+
+.exercise-4 .yellow
+{
+  right: 0; /* Position the yellow box 0px from the right */
+}
