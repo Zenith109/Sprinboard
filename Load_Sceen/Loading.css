@@ -1,3 +1,16 @@
+/*this will make a loading screen with a rotating circle*/
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .loader svg {
     Display: block;
     Width: 100%;
