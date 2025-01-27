@@ -14,7 +14,7 @@ guests.push("AUGUSTUS", "LUCIA");   // Adds "AUGUSTUS" and "LUCIA" to the end of
 const spartacusIndex = guests.indexOf("SPARTACUS"); // Returns -1 because "SPARTACUS" is not in the array
 
 //## Question 2 🤔What would the value of `spartacusIndex` be if "SPARTACUS" wasn't invited?
-console.log(spartacusIndex);    // Output: -1
+console.log(spartacusIndex);    // Output: -1 not found in the array so it returns -1
 
 //## Step 4 🧩Oops! Caesar just received a message that "CASSIUS" won't be able to make it. Remove him from the list.
 guests.splice(guests.indexOf("CASSIUS"), 1); // Removes "CASSIUS" from the array using splice method with index of "CASSIUS" and 1 as the number of elements to remove (shorthand)
