@@ -1,48 +1,56 @@
+/* Style for the body element */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif; /* Set the font family */
+    text-align: center; /* Center align text */
+    background-color: #f0f0f0; /* Light grey background color */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the body */
 }
 
+/* Style for the form element */
 form {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add space below the form */
 }
 
+/* Container for images */
 #image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
 }
 
+/* Wrapper for each image */
 .image-wrapper {
-    position: relative;
-    display: inline-block;
+    position: relative; /* Position relative for absolute positioning of text */
+    display: inline-block; /* Inline-block display */
 }
 
+/* Style for the image inside the wrapper */
 .image-wrapper img {
-    max-width: 80%;
-    border: 2px solid #999;
-    border-radius: 10px;
+    max-width: 80%; /* Limit the maximum width of the image */
+    border: 2px solid #999; /* Add a border around the image */
+    border-radius: 10px; /* Rounded corners for the image */
 }
 
+/* Style for the top and bottom text inside the image wrapper */
 .image-wrapper .top-text,
 .image-wrapper .bottom-text {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute; /* Absolute positioning */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position to center */
+    color: white; /* White text color */
+    font-size: 1.25rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
 }
 
+/* Position the top text */
 .image-wrapper .top-text {
-    top: 10px;
+    top: 10px; /* Position 10px from the top */
 }
 
+/* Position the bottom text */
 .image-wrapper .bottom-text {
-    bottom: 10px;
+    bottom: 10px; /* Position 10px from the bottom */
 }
