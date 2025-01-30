@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.image-wrapper img {
+    max-width: 80%;
+    border: 2px solid #999;
+    border-radius: 10px;
+}
+
+.image-wrapper .top-text,
+.image-wrapper .bottom-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.image-wrapper .top-text {
+    top: 10px;
+}
+
+.image-wrapper .bottom-text {
+    bottom: 10px;
+}
