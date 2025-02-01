@@ -1,0 +1,15 @@
+this is the problem giving b\y the project turn code in js to do the following 
+
+algorithm LetterCount, takes word, returns a dictionary with letter counts:
+	if word is not a string of alphabetical characters:
+		print Error and stop
+
+	create a dictionary to hold letter counts
+
+	for each letter in word:
+		if dictionary already has the letter:
+	        increment the count of the letter by 1
+	    else
+		    set the count of the letter to 1
+
+	return the dictionary that holds the letter counts
