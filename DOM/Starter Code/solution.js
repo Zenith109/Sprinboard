@@ -49,6 +49,9 @@ function solveTask7() {
 }
 
 // Task 8: Create a new button and append it to the element with id "task8"
+/**
+ * Creates a new button element with the text "New Button" and appends it to the element with the ID "task8".
+ */
 function solveTask8() {
     const newButton = document.createElement("button");
     newButton.innerText = "New Button";
