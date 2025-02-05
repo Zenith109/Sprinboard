@@ -1,4 +1,3 @@
-// Add an event listener to the form to handle the submit event
 document.getElementById('image-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
@@ -31,19 +30,23 @@ document.getElementById('image-form').addEventListener('submit', function(event)
     bottomTextElement.className = 'bottom-text';
     bottomTextElement.textContent = bottomText;
 
-    // Append the image and text elements to the wrapper
+    // Create a delete button
+    const deleteButton = document.createElement('button');
+    deleteButton.className = 'delete-button';
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', function() {
+        imageWrapper.remove();
+    });
+
+    // Append the image, text elements, and delete button to the wrapper
     imageWrapper.appendChild(img);
     imageWrapper.appendChild(topTextElement);
     imageWrapper.appendChild(bottomTextElement);
+    imageWrapper.appendChild(deleteButton);
 
     // Append the wrapper to the image container
     document.getElementById('image-container').appendChild(imageWrapper);
 
     // Reset the form fields
     document.getElementById('image-form').reset();
-
-    // Add an event listener to the wrapper to remove it when clicked
-    imageWrapper.addEventListener('click', function() {
-        this.remove();
-    });
 });
