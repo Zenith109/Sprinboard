@@ -1,12 +1,11 @@
-from browser import document, html, timer, window
+import tkinter as tk
 import random
 
 class ChessBoard:
-    def __init__(self):
+    def __init__(self, root):
         # Initialize the chess board
-        self.canvas = html.CANVAS(width=480, height=480)
-        document <= self.canvas
-        self.context = self.canvas.getContext("2d")
+        self.canvas = tk.Canvas(root, width=480, height=480)
+        self.canvas.pack()
         self.draw_board()
         self.draw_pieces()
 
@@ -19,8 +18,7 @@ class ChessBoard:
                 x1 = col * 60
                 y1 = row * 60
                 self.context.fillStyle = color
-                self.context.fillRect(x1, y1, 60, 60)
-
+                self.canvas.create_rectangle(x1, y1, x1 + 60, y1 + 60, fill=color)
     def draw_pieces(self):
         # Draw the initial chess pieces on the board
         pieces = {
@@ -45,7 +43,26 @@ class ChessBoard:
                     y = row * 60 + 30
                     self.context.font = "24px Arial"
                     self.context.fillStyle = "black" if piece.islower() else "white"
-                    self.context.fillText(pieces[piece], x - 12, y + 12)
+                    color = "black" if piece.islower() else "white"
+                    self.canvas.create_text(x, y, text=pieces[piece], font=("Arial", 24), fill=color)
+    def __init__(self, level=1):
+        # Initialize the AI with a difficulty level
+        self.level = level
+
+    def make_move(self, board):
+        # Make a move based on the current board state
+        possible_moves = self.get_possible_moves(board)
+        if possible_moves:
+            return random.choice(possible_moves)
+        return None
+
+    def get_possible_moves(self, board):
+        # Get a list of possible moves (dummy implementation)
+        return [(0, 0), (1, 1), (2, 2)]
+
+    def increase_difficulty(self):
+        # Increase the difficulty level of the AI
+        self.level += 1
 
 class ChessAI:
     def __init__(self, level=1):
@@ -73,7 +90,8 @@ class ChessGame:
         self.board = ChessBoard()
         self.mode = mode
         self.ai1 = ChessAI(level=1)
-        self.ai2 = ChessAI(level=1)
+        self.root = tk.Tk()
+        self.board = ChessBoard(self.root)
         self.current_turn = 'player1'
         self.setup_game()
 
@@ -121,5 +139,6 @@ def main():
     mode = 'player_vs_ai'  # Change this to test different modes
     game = ChessGame(mode)
 
-# Set a timeout to start the main function
-timer.set_timeout(main, 0)
+if __name__ == "__main__":
+    main()
+    tk.mainloop()
