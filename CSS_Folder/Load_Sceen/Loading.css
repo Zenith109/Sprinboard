@@ -1,27 +1,40 @@
-/*this will make a loading screen with a rotating circle*/
+/* This will make a loading screen with a rotating circle */
 .loader {
+    /* Position the loader to cover the entire screen */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    /* Set the background color using a CSS variable */
     background: var(--background);
+    /* Ensure the loader is on top of other elements */
     z-index: 1000;
+    /* Center the loader content */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .loader svg {
-    Display: block;
-    Width: 100%;
-    Height: 100%;
+    /* Ensure the SVG is displayed as a block element */
+    display: block;
+    /* Set the width and height of the SVG to 100% */
+    width: 100%;
+    height: 100%;
 }
+
 .loader svg rect,
 .loader svg polygon,
 .loader svg circle {
+    /* Remove any fill color */
     fill: none;
+    /* Set the stroke color using a CSS variable */
     stroke: var(--path);
+    /* Set the stroke width */
     stroke-width: 10px;
+    /* Set the stroke line join style */
     stroke-linejoin: round;
+    /* Set the stroke line cap style */
     stroke-linecap: round;
 }
