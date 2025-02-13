@@ -1,0 +1,95 @@
+*
+{
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  line-height: 1.5;
+  margin: 20px;
+  padding: 20px;
+  color: #39ff14; /* Neon green */
+  border: 1px solid #39ff14;
+  background-color: #000000; /* Black */
+}
+
+h1
+{
+  font-size: 20px;
+}
+
+h2
+{
+  font-size: 18px;
+}
+
+h3
+{
+  font-size: 16px;
+}
+
+h1, h2, h3
+{
+  margin: 10px 0;
+}
+
+button
+{
+  padding: 10px;
+  color: #39ff14; /* Neon green */
+  border: 1px solid #39ff14;
+  background-color: #000000; /* Black */
+}
+
+label
+{
+  padding: 10px;
+  border: 1px dashed #39ff14; /* Neon green */
+}
+
+input
+{
+  width: 230px;
+  padding: 10px;
+  color: #ffffff; /* White */
+  border: 1px dashed #39ff14; /* Neon green */
+  outline: none;
+  background-color: #000000; /* Black */
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input[type=number]
+{
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.container
+{
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px dashed #39ff14; /* Neon green */
+}
+
+.hacker
+{
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px dotted #39ff14; /* Neon green */
+}
+
+.hacker img
+{
+  border-radius: 100%;
+}
