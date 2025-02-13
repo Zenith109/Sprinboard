@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* Set the background color using a CSS variable */
+    /* Set the background color using a CSS variable for change */
     background: var(--background);
     /* Ensure the loader is on top of other elements */
     z-index: 1000;
