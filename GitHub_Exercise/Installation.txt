@@ -1,0 +1,92 @@
+Task 1: Installation
+
+Download and install GitHub Desktop from the official website.
+
+Task 2: Configuration
+
+Set your global username and email in GitHub Desktop's preferences:
+Open GitHub Desktop.
+Go to File > Options (or GitHub Desktop > Preferences on macOS).
+Set your name and email in the Git tab.
+
+Task 3: Initialization
+
+Create a new repository named GitAdventure:
+Open GitHub Desktop.
+Go to File > New Repository.
+Name the repository GitAdventure.
+Choose a local path where you want to create the repository.
+Click Create Repository.
+Find and open the repository folder on your computer.
+
+Task 4: Staging and Committing
+
+Inside GitAdventure, create journey.txt with the content: "Starting my Git journey." Then stage and commit it:
+Open the GitAdventure folder on your computer.
+Create a file named journey.txt and add the content: "Starting my Git journey."
+Go back to GitHub Desktop.
+You should see journey.txt in the Changes tab.
+Stage the file by selecting the checkbox next to it.
+Write a commit message like "Add journey.txt with initial content."
+Click Commit to main.
+
+Task 5: Deletion
+
+Create temp.txt with the content: "This file is meant to be deleted." Then stage and commit it. After that, delete temp.txt and commit the deletion:
+Create a file named temp.txt in the GitAdventure folder and add the content: "This file is meant to be deleted."
+Go back to GitHub Desktop.
+Stage the file by selecting the checkbox next to it.
+Write a commit message like "Add temp.txt with content to be deleted."
+Click Commit to main.
+Delete temp.txt from the GitAdventure folder.
+Go back to GitHub Desktop.
+You should see temp.txt marked as deleted in the Changes tab.
+Stage the deletion by selecting the checkbox next to it.
+Write a commit message like "Delete temp.txt."
+Click Commit to main.
+
+Task 6: Renaming
+
+Rename journey.txt to adventure.txt, update its content, and then stage and commit your changes:
+Rename journey.txt to adventure.txt in the GitAdventure folder.
+Open adventure.txt and update its content to: "My journey evolves into an adventure with Git."
+Go back to GitHub Desktop.
+You should see the rename and content change in the Changes tab.
+Stage the changes by selecting the checkbox next to them.
+Write a commit message like "Rename journey.txt to adventure.txt and update content."
+Click Commit to main.
+
+Task 7: Ignoring Files
+
+Create a .gitignore file to ignore all files ending with .log. Stage and commit it. Verify that they are being ignored by creating a dummy .log file and checking that it doesn't appear in the Changes tab:
+Create a file named .gitignore in the GitAdventure folder and add the content: *.log.
+Go back to GitHub Desktop.
+You should see .gitignore in the Changes tab.
+Stage the file by selecting the checkbox next to it.
+Write a commit message like "Add .gitignore to ignore .log files."
+Click Commit to main.
+Create a file named test.log in the GitAdventure folder.
+Go back to GitHub Desktop.
+Verify that test.log does not appear in the Changes tab.
+
+Task 8: Diving Deeper
+
+Change adventure.txt to add "Exploring the depths of Git commands and their powers." Then stage and commit your changes:
+Open adventure.txt and add the content: "Exploring the depths of Git commands and their powers."
+Go back to GitHub Desktop.
+You should see the change in the Changes tab.
+Stage the change by selecting the checkbox next to it.
+Write a commit message like "Update adventure.txt with new content."
+Click Commit to main.
+
+Task 9: History and Restoration
+
+Browse your repository's commit history in GitHub Desktop to see your progress. Try to revert adventure.txt to an earlier state:
+Go to the History tab in GitHub Desktop to see your commit history.
+To revert adventure.txt to an earlier state, you can manually copy the content from the earlier commit and paste it back into adventure.txt, then stage and commit the change.
+Alternatively, you can use the command line to revert to a specific commit:
+Replace <commit_hash> with the actual commit hash from the History tab where journey.txt was first added.
+Go back to GitHub Desktop.
+Stage the change by selecting the checkbox next to it.
+Write a commit message like "Revert adventure.txt to its initial state."
+Click Commit to main.
