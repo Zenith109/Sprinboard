@@ -9,13 +9,27 @@
 </head>
 <body>
     <header id="header">
+        <!-- Navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <!-- Profile picture -->
         <img src="CV_pic.png" alt="Profile Picture" class="profile-picture">
+        <!-- Name and title -->
         <h1>Patrick Kyle Moore</h1>
+        <h4>Front-end Developer</h4>
+        <!-- Contact information -->
         <div class="contact-info">
-            <!-- Contact information -->
-            <p>Phone: <i>901-498-2202</i></p>
-            <p>Email: <strong><a href="mailto:Patrickmoore109@gmail.com" class="hover-link">Patrickmoore109@gmail.com</a></strong></p>
+            <p><strong>📞: <i>901-498-2202</i></strong></p>
+            <p>📧: <strong><a href="mailto:Patrickmoore109@gmail.com" class="hover-link">Patrickmoore109@gmail.com</a></strong></p>
+            <a href="https://www.credly.com/users/patrick-moore.081dc9b8">🥇Credly</a> <br>
+            <a href="https://www.linkedin.com/in/patrick-moore-5bb341199/">👔LinkedIn</a> <br>
+            <a href="https://github.com/Zenith109/Sprinboard">💻GitHub</a>
         </div>
     </header>
 
@@ -35,74 +49,125 @@
     </section>
 
     <section id="technologies">
-        <h2>Technologies</h2>
+        <h2>Skills</h2>
         <!-- Technologies section -->
-        <h3>Web Development</h3>
+        <h3>Technical Skills</h3>
         <ul>
+            <li>PySpark</li>
             <li>TypeScript</li>
             <li>Python</li>
             <li>HTML</li>
             <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>jQuery</li>
+            <li>PostgreSQL</li>
             <li>JavaScript</li>
-        </ul>
-        <h3>Database</h3>
-        <ul>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Flask</li>
             <li>SQL</li>
             <li>NoSQL</li>
             <li>Python</li>
-        </ul>
-        <h3>Cybersecurity</h3>
-        <ul>
             <li>BurpSuite</li>
             <li>Wireshark</li>
             <li>Metasploit</li>
             <li>Nmap</li>
             <li>Jack the Ripper</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>APIs</li>
+            <li>Debuggin/Error Handling</li>
+            <li>Testing</li>
+            <li>Node.js</li>
         </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Projects section -->
+        <h3>Soft-Skills</h3>
         <ul>
-            <li>
-                <a href="Pin_Point.html">Pin_Point_checkout</a>
-            <li>
-                <a href="Movie_Reels.html">Movie_Reels</a>
-            </li>
+            <li>Teamwork</li>
+            <li>Detialed communication</li>
+            <li>Problem-Solving</li>
+            <li>Learn and Be Curious</li>
+            <li>Have Backbone; Disagree and Commit</li>
+            <li>Deliver Results</li>
+            <li>Ownership</li>
+            <li>Insist on the Highest Standards</li>
+            <li>Think Big</li>
+            <li>Frugality</li>
         </ul>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <!-- Experience section -->
-        <a href="https://www.credly.com/users/patrick-moore.081dc9b8">Credly</a> <br>
-        <a href="https://www.linkedin.com/in/patrick-moore-5bb341199/">LinkedIn</a> <br>
-        <a href="https://github.com/Zenith109/Sprinboard">GitHub</a>
+    <section>
+        <div class="Projects"></div>
+            <!-- Button to toggle project visibility -->
+            <button class="toggle-button" onclick="toggleAllContent()">Show/Hide Projects</button>
+            <div class="content" id="content" style="display: none;">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                <a href="Pin_Point.html">Pin_Point_checkout</a>
+                </li>
+                <li>
+                <a href="Movie_Reels.html">Movie_Reels</a>
+                </li>
+                <li>
+                    <a href="index.html">Jeopardy</a>
+                </li>
+                <li>
+                    <a href="memGen.html">Meme Generator</a>
+            </ul>
+            </div>
+        </div>
+
+        <script>
+            // Function to toggle the visibility of the projects section
+            function toggleAllContent() {
+            var content = document.getElementById("content");
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+            }
+        </script>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <!-- Contact form section -->
-        <form id="contact-form">
-            <p><strong>First Name:</strong></p>
-            <input type="text" name="first-name" minlength="2" maxlength="20" required id="first-name"> <br>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+            <label for="first-name"><strong>First Name:</strong></label>
+            <input type="text" name="first-name" minlength="2" maxlength="20" required id="first-name" class="form-control">
+            </div>
 
-            <p><strong>Email:</strong></p>
-            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required id="email-input"> <br>
+            <div class="form-group">
+            <label for="email-input"><strong>Email:</strong></label>
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required id="email-input" class="form-control">
+            </div>
 
-            <p><strong>Message:</strong></p>
-            <textarea name="message" rows="5" cols="20" maxlength="2000" id="message"></textarea> <br>
+            <div class="form-group">
+            <label for="message"><strong>Message:</strong></label>
+            <textarea name="message" rows="5" cols="20" maxlength="2000" id="message" class="form-control"></textarea>
+            </div>
 
-            <p><strong>Date Needed:</strong></p>
-            <input type="date" name="date" id="date"> <br>
+            <div class="form-group">
+            <label for="date"><strong>Date Needed:</strong></label>
+            <input type="date" name="date" id="date" class="form-control">
+            </div>
 
-            <p><strong>Time Needed:</strong></p>
-            <input type="radio" name="time-needed" value="Morning" id="time-morning">Morning
-            <input type="radio" name="time-needed" value="Afternoon" id="time-afternoon">Afternoon
-            <input type="radio" name="time-needed" value="Evening" id="time-evening">Evening <br>
+            <div class="form-group">
+            <label><strong>Time Needed:</strong></label>
+            <div class="radio-group">
+                <input type="radio" name="time-needed" value="Morning" id="time-morning" class="form-radio">
+                <label for="time-morning">Morning</label>
+                <input type="radio" name="time-needed" value="Afternoon" id="time-afternoon" class="form-radio">
+                <label for="time-afternoon">Afternoon</label>
+                <input type="radio" name="time-needed" value="Evening" id="time-evening" class="form-radio">
+                <label for="time-evening">Evening</label>
+            </div>
+            </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn-submit">Submit</button>
         </form>
     </section>
 </body>

@@ -16,6 +16,38 @@ body {
     padding: 30px; /* Increased padding */
 }
 
+/* Navigation bar styling */
+nav {
+    background-color: rgba(46, 46, 46, 0.8);
+    border-bottom: 2px solid #FF6347;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FF6347;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #FF4500;
+    text-decoration: underline;
+}
+
 /* Profile picture styling */
 .profile-picture {
     width: 200px;
@@ -28,20 +60,13 @@ body {
 /* Header section styling */
 #header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     background-color: rgba(46, 46, 46, 0.8);
     color: #FF6347;
     padding: 30px; /* Increased padding */
     border-bottom: 2px solid #FF6347;
     position: relative;
-}
-
-#header .profile-picture {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
 }
 
 #header h1 {
@@ -52,15 +77,11 @@ body {
     text-align: center;
     text-shadow: 3px 3px 6px #FF4500;
     margin: 0;
-    flex-grow: 1;
 }
 
 #header .contact-info {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    text-align: right;
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* Section styling */
@@ -219,4 +240,10 @@ input:focus, textarea:focus, select:focus, button:focus {
 .hover-link:hover {
     color: #FF4500;
     text-decoration: underline;
+}
+
+/* Hover effect for all text elements */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover, a:hover, span:hover, li:hover {
+    color: #FFD700; /* Gold color for better readability */
+    text-shadow: 2px 2px 4px #FFA500; /* Orange shadow for better readability */
 }
