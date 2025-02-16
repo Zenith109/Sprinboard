@@ -134,7 +134,7 @@
     <section id="contact">
         <h2>Contact</h2>
         <!-- Contact form section -->
-        <form id="contact-form" class="contact-form">
+        <form id="contact-form" class="contact-form" action="mailto:Patrickmoore109@gmail.com" method="post" enctype="text/plain"></form>
             <div class="form-group">
             <label for="first-name"><strong>First Name:</strong></label>
             <input type="text" name="first-name" minlength="2" maxlength="20" required id="first-name" class="form-control">
@@ -158,15 +158,13 @@
             <div class="form-group">
             <label><strong>Time Needed:</strong></label>
             <div class="radio-group">
-                <input type="radio" name="time-needed" value="Morning" id="time-morning" class="form-radio">
-                <label for="time-morning">Morning</label>
-                <input type="radio" name="time-needed" value="Afternoon" id="time-afternoon" class="form-radio">
-                <label for="time-afternoon">Afternoon</label>
-                <input type="radio" name="time-needed" value="Evening" id="time-evening" class="form-radio">
-                <label for="time-evening">Evening</label>
+            <input type="radio" name="time-needed" value="Morning" id="time-morning" class="form-radio">
+            <label for="time-morning">Morning</label>
+            <input type="radio" name="time-needed" value="Afternoon" id="time-afternoon" class="form-radio">
+            <label for="time-afternoon">Afternoon</label>
+            <input type="radio" name="time-needed" value="Evening" id="time-evening" class="form-radio">
+            <label for="time-evening">Evening</label>
             </div>
-            </div>
-
             <button type="submit" class="btn-submit">Submit</button>
         </form>
     </section>

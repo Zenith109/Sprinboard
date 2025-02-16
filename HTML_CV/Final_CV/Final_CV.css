@@ -14,6 +14,21 @@ body {
     font-size: 16px; /* Increased font size */
     margin: 0;
     padding: 30px; /* Increased padding */
+    animation: pulse 2s infinite;
+    background-size: cover;
+    animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Navigation bar styling */
@@ -46,6 +61,10 @@ nav ul li a {
 nav ul li a:hover {
     color: #FF4500;
     text-decoration: underline;
+}
+
+nav ul li a:visited {
+    color: red;
 }
 
 /* Profile picture styling */
