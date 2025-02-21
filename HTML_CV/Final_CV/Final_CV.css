@@ -7,27 +7,32 @@
 
 /* Body styling */
 body {
-    background: #1E1E1E url('Background_CV.png') no-repeat center fixed;
+    background: linear-gradient(to right, #1E1E1E, #1E1E1E), url('Background_CV.png') no-repeat center fixed;
     background-size: cover;
     color: #E0E0E0;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px; /* Increased font size */
+    font-size: 16px;
     margin: 0;
-    padding: 30px; /* Increased padding */
-    animation: pulse 2s infinite;
-    background-size: cover;
-    animation: fadeInOut 2s infinite;
+    padding: 30px;
+    border: 10px solid;
+    animation: pulseBorder 5s infinite;
 }
 
-@keyframes fadeInOut {
+@keyframes pulseBorder {
     0% {
-        opacity: 1;
+        border-color: #FF0000;
+    }
+    25% {
+        border-color: #00FF00;
     }
     50% {
-        opacity: 0.5;
+        border-color: #0000FF;
+    }
+    75% {
+        border-color: #FFFF00;
     }
     100% {
-        opacity: 1;
+        border-color: #FF0000;
     }
 }
 
@@ -56,6 +61,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
 nav ul li a:hover {
@@ -83,13 +89,13 @@ nav ul li a:visited {
     align-items: center;
     background-color: rgba(46, 46, 46, 0.8);
     color: #FF6347;
-    padding: 30px; /* Increased padding */
+    padding: 30px;
     border-bottom: 2px solid #FF6347;
     position: relative;
 }
 
 #header h1 {
-    font-size: 32px; /* Increased font size */
+    font-size: 32px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     color: #FF6347;
@@ -122,13 +128,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 40px; /* Increased font size */
+    font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 32px; /* Increased font size */
+    font-size: 32px;
     margin-bottom: 15px;
 }
 
@@ -138,27 +144,27 @@ h2 a {
 }
 
 h3 {
-    font-size: 28px; /* Increased font size */
+    font-size: 28px;
 }
 
 h4 {
-    font-size: 24px; /* Increased font size */
+    font-size: 24px;
     margin-bottom: 8px;
 }
 
 h5 {
-    font-size: 20px; /* Increased font size */
+    font-size: 20px;
     margin-bottom: 6px;
 }
 
 h6 {
-    font-size: 18px; /* Increased font size */
+    font-size: 18px;
     margin-bottom: 4px;
 }
 
 /* Paragraph styling */
 p {
-    font-size: 16px; /* Increased font size */
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
     color: #E0E0E0;
     text-align: left;
@@ -227,31 +233,31 @@ input:focus, textarea:focus, select:focus, button:focus {
     }
 
     #header h1 {
-        font-size: 32px; /* Adjusted font size */
+        font-size: 32px;
     }
 
     h1 {
-        font-size: 32px; /* Adjusted font size */
+        font-size: 32px;
     }
 
     h2 {
-        font-size: 28px; /* Adjusted font size */
+        font-size: 28px;
     }
 
     h3 {
-        font-size: 24px; /* Adjusted font size */
+        font-size: 24px;
     }
 
     h4 {
-        font-size: 20px; /* Adjusted font size */
+        font-size: 20px;
     }
 
     h5 {
-        font-size: 18px; /* Adjusted font size */
+        font-size: 18px;
     }
 
     h6 {
-        font-size: 16px; /* Adjusted font size */
+        font-size: 16px;
     }
 }
 
@@ -263,6 +269,24 @@ input:focus, textarea:focus, select:focus, button:focus {
 
 /* Hover effect for all text elements */
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover, a:hover, span:hover, li:hover {
-    color: #FFD700; /* Gold color for better readability */
-    text-shadow: 2px 2px 4px #FFA500; /* Orange shadow for better readability */
+    color: #FFD700;
+    text-shadow: 2px 2px 4px #FFA500;
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: none;
+        color: #000;
+    }
+
+    nav, #header, section {
+        background-color: #FFF;
+        color: #000;
+        border: none;
+    }
+
+    .profile-picture {
+        border: none;
+    }
 }
