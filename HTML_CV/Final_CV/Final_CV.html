@@ -43,7 +43,7 @@
         <h2>Education</h2>
         <!-- Education section -->
         <ol>
-            <li><b>Springboard - <i>Software Development</i> - 2025 - Present</b></li>
+            <li><b><a href="https://api.accredible.com/v1/auth/invite?code=e3cdf39054c5826fed4b&credential_id=54aa3262-4c5c-4d62-81a4-1fd9dd387533&url=https%3A%2F%2Fwww.credential.net%2F54aa3262-4c5c-4d62-81a4-1fd9dd387533&ident=bc2d3e2c-1b4b-4cae-b6a9-63f8e22d3cab">Springboard</a> - <i>Software Development</i> - 2025 </b></li>
             <li><b>Tennessee Tech - <i>CAD</i> - 2017 - 2018</b></li>
         </ol>
     </section>
@@ -52,48 +52,80 @@
         <h2>Skills</h2>
         <!-- Technologies section -->
         <h3>Technical Skills</h3>
-        <ul>
-            <li>PySpark</li>
-            <li>TypeScript</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>jQuery</li>
-            <li>PostgreSQL</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>Flask</li>
-            <li>SQL</li>
-            <li>NoSQL</li>
-            <li>Python</li>
-            <li>BurpSuite</li>
-            <li>Wireshark</li>
-            <li>Metasploit</li>
-            <li>Nmap</li>
-            <li>Jack the Ripper</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>APIs</li>
-            <li>Debuggin/Error Handling</li>
-            <li>Testing</li>
-            <li>Node.js</li>
-        </ul>
+        <!-- Button to toggle technical skills visibility -->
+        <button class="toggle-button" onclick="toggleSkills()">Show/Hide Technical Skills</button>
+        <div class="content" id="skills-content" style="display: none;">
+            <ul>
+                <li>PySpark</li>
+                <li>TypeScript</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>PostgreSQL</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Flask</li>
+                <li>SQL</li>
+                <li>NoSQL</li>
+                <li>Python</li>
+                <li>BurpSuite</li>
+                <li>Wireshark</li>
+                <li>Metasploit</li>
+                <li>Nmap</li>
+                <li>Jack the Ripper</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>APIs</li>
+                <li>Debugging/Error Handling</li>
+                <li>Testing</li>
+                <li>Node.js</li>
+            </ul>
+        </div>
+
+        <script>
+            // Function to toggle the visibility of the technical skills section
+            function toggleSkills() {
+                var skillsContent = document.getElementById("skills-content");
+                if (skillsContent.style.display === "none") {
+                    skillsContent.style.display = "block";
+                } else {
+                    skillsContent.style.display = "none";
+                }
+            }
+        </script>
         <h3>Soft-Skills</h3>
-        <ul>
-            <li>Teamwork</li>
-            <li>Detialed communication</li>
-            <li>Problem-Solving</li>
-            <li>Learn and Be Curious</li>
-            <li>Have Backbone; Disagree and Commit</li>
-            <li>Deliver Results</li>
-            <li>Ownership</li>
-            <li>Insist on the Highest Standards</li>
-            <li>Think Big</li>
-            <li>Frugality</li>
-        </ul>
+        <!-- Button to toggle soft skills visibility -->
+        <button class="toggle-button" onclick="toggleSoftSkills()">Show/Hide Soft Skills</button>
+        <div class="content" id="soft-skills-content" style="display: none;">
+            <ul>
+                <li>Teamwork</li>
+                <li>Detailed communication</li>
+                <li>Problem-Solving</li>
+                <li>Learn and Be Curious</li>
+                <li>Have Backbone; Disagree and Commit</li>
+                <li>Deliver Results</li>
+                <li>Ownership</li>
+                <li>Insist on the Highest Standards</li>
+                <li>Think Big</li>
+                <li>Frugality</li>
+            </ul>
+        </div>
+
+        <script>
+            // Function to toggle the visibility of the soft skills section
+            function toggleSoftSkills() {
+                var softSkillsContent = document.getElementById("soft-skills-content");
+                if (softSkillsContent.style.display === "none") {
+                    softSkillsContent.style.display = "block";
+                } else {
+                    softSkillsContent.style.display = "none";
+                }
+            }
+        </script>
     </section>
 
     <section>
@@ -155,17 +187,25 @@
             <input type="date" name="date" id="date" class="form-control">
             </div>
 
-            <div class="form-group">
-            <label><strong>Time Needed:</strong></label>
-            <div class="radio-group">
-            <input type="radio" name="time-needed" value="Morning" id="time-morning" class="form-radio">
-            <label for="time-morning">Morning</label>
-            <input type="radio" name="time-needed" value="Afternoon" id="time-afternoon" class="form-radio">
-            <label for="time-afternoon">Afternoon</label>
-            <input type="radio" name="time-needed" value="Evening" id="time-evening" class="form-radio">
-            <label for="time-evening">Evening</label>
-            </div>
-            <button type="submit" class="btn-submit">Submit</button>
+            <button type="submit" class="btn-submit" onclick="sendEmail()">Submit</button>
+
+            <script>
+                function sendEmail() {
+                    var firstName = document.getElementById('first-name').value;
+                    var email = document.getElementById('email-input').value;
+                    var message = document.getElementById('message').value;
+                    var date = document.getElementById('date').value;
+
+                    var mailtoLink = 'mailto:Patrickmoore109@gmail.com' +
+                        '?subject=' + encodeURIComponent('Contact Form Submission from ' + firstName) +
+                        '&body=' + encodeURIComponent('Name: ' + firstName + '\n' +
+                                                      'Email: ' + email + '\n' +
+                                                      'Message: ' + message + '\n' +
+                                                      'Date Needed: ' + date);
+
+                    window.location.href = mailtoLink;
+                }
+            </script>
         </form>
     </section>
 </body>
