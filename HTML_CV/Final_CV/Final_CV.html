@@ -129,25 +129,53 @@
 
     <section>
         <div class="Projects"></div>
-            <!-- Button to toggle project visibility -->
-            <button class="toggle-button" onclick="toggleAllContent()">Show/Hide Projects</button>
-            <div class="content" id="content" style="display: none;">
+        <!-- Button to toggle project visibility -->
+        <button class="toggle-button" id="toggle-projects-button" onclick="toggleAllContent()">
+            <img src="penguin_open_arms.png" alt="Penguin with open arms" id="penguin-image">
+        </button>
+        <div class="content" id="content" style="display: none;">
             <h2>Projects</h2>
             <ul>
                 <li>
-                <a href="Pin_Point.html">Pin_Point_checkout</a>
+                    <a href="Pin_Point.html">Pin_Point_checkout</a>
                 </li>
                 <li>
-                <a href="Movie_Reels.html">Movie_Reels</a>
+                    <a href="Movie_Reels.html">Movie_Reels</a>
                 </li>
                 <li>
                     <a href="Jeopardy/index.html">Jeopardy</a>
                 </li>
                 <li>
                     <a href="memGen.html">Meme Generator</a>
+                </li>
+                <li>
+                    <a href="../Clock_w_Progressive_Bar/index.html">Clock with Progressive Bar</a>
+                </li>
+                <li>
+                    <a href="../Pokemon_Card_Generator/index.html">Pokemon Card Generator</a>
+                </li>
             </ul>
-            </div>
         </div>
+    </section>
+
+    <script>
+        // Function to toggle the visibility of the projects section
+        function toggleAllContent() {
+            var content = document.getElementById("content");
+            var button = document.getElementById("toggle-projects-button");
+            var image = document.getElementById("penguin-image");
+
+            if (content.style.display === "none") {
+                content.style.display = "block";
+                image.src = "penguin_crossed_arms.png";
+                image.alt = "Penguin with crossed arms";
+            } else {
+                content.style.display = "none";
+                image.src = "penguin_open_arms.png";
+                image.alt = "Penguin with open arms";
+            }
+        }
+    </script>
 
         <script>
             // Function to toggle the visibility of the projects section
